@@ -17,228 +17,244 @@
     <script src="js/bootstrap.min.js"></script>
   </head>
   <body>
-    <nav class="navbar-blog navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
-            <div class="col-xs-12 col-sm-12 col-md-10 col-md-offset-1">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span> 
-                    </button>
-                    <a class="navbar-brand" href="#"><b>SlimRide</b></a>
-                </div>
-                <div class="collapse navbar-collapse" id="myNavbar">
-                    <ul class="nav navbar-nav navbar-right">
-                        <li><a href="#">home</a></li>
-                        <li><a href="#">Catagories</a></li>
-                        <li><a href="#">Reports</a></li>
-                        <li><a href="#" class="sign-up-ride">Sign up to Ride</a></li>
-                    </ul>
+    <div class="main-blog-wrapper">
+        <nav class="navbar-blog navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
+                <div class="col-xs-12 col-sm-12 col-md-10 col-md-offset-1">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span> 
+                        </button>
+                        <a class="navbar-brand" href="#"><b>SlimRide</b></a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="myNavbar">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="#">home</a></li>
+                            <li><a href="#">About us</a></li>
+                            <li><a href="#">Why us?</a></li>
+                            <li><a href="#">Catagories</a></li>
+                            <li><a href="#" class="sign-up-ride">Sign up to Ride</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
+        </nav><!-- Navbar Ends Here -->
+        <div class="container container-form">
+          <div class="row">
+              <div class="col-md-10 col-md-offset-1 slimride-form-row">
+                  <form role="form my-form">
+                      <div class="col-md-4">
+                          <div class="form-group">
+                              <label class="control-label" for="sel1"><i>Select Your City</i></label>
+                                <div class="form-select-form">
+                                    <select class="form-control" id="sel1">
+                                      <option>Catagory-1</option>
+                                      <option>Catagory-2</option>
+                                      <option>Catagory-3</option>
+                                      <option>Catagory-4</option>
+                                    </select>
+                                    <i class="fa fa-angle-down fa-2x" aria-hidden="true"></i>
+                                </div>
+                          </div>
+                      </div>
+                      <div class="col-md-4">
+                          <div class="form-group">
+                              <label class="control-label" for="sel2"><i>Browse Categories</i></label>
+                                <div class="form-select-form">
+                                    <select class="form-control" id="sel2">
+                                      <option>Catagory-1</option>
+                                      <option>Catagory-2</option>
+                                      <option>Catagory-3</option>
+                                      <option>Catagory-4</option>
+                                    </select>
+                                    <i class="fa fa-angle-down fa-2x" aria-hidden="true"></i>
+                                </div>    
+                          </div>
+                      </div>
+                      <div class="col-md-4">
+                          <div class="form-group">
+                              <label class="control-label" for="email"><i>Search for a specific product</i></label>
+                              <div class="search-field">
+                                  <input type="type" class="form-control" id="email" placeholder="Search Your Product">
+                                  <i class="fa fa-search fa-lg" aria-hidden="true"></i>
+                              </div>
+                          </div>
+                      </div>
+                  </form>
+              </div>
+          </div>
         </div>
-    </nav><!-- Navbar Ends Here -->
-    <div class="container container-form">
-      <div class="row">
-          <div class="col-md-10 col-md-offset-1 slimride-form-row">
-              <form role="form my-form">
-                  <div class="col-md-4">
-                      <div class="form-group">
-                          <label class="control-label" for="sel1"><i>Select Your City</i></label>
-                            <div class="form-select-form">
-                                <select class="form-control" id="sel1">
-                                  <option>Catagory-1</option>
-                                  <option>Catagory-2</option>
-                                  <option>Catagory-3</option>
-                                  <option>Catagory-4</option>
-                                </select>
-                                <i class="fa fa-angle-down fa-2x" aria-hidden="true"></i>
-                            </div>
-                      </div>
-                  </div>
-                  <div class="col-md-4">
-                      <div class="form-group">
-                          <label class="control-label" for="sel2"><i>Browse Categories</i></label>
-                            <div class="form-select-form">
-                                <select class="form-control" id="sel2">
-                                  <option>Catagory-1</option>
-                                  <option>Catagory-2</option>
-                                  <option>Catagory-3</option>
-                                  <option>Catagory-4</option>
-                                </select>
-                                <i class="fa fa-angle-down fa-2x" aria-hidden="true"></i>
-                            </div>    
-                      </div>
-                  </div>
-                  <div class="col-md-4">
-                      <div class="form-group">
-                          <label class="control-label" for="email"><i>Search for a specific product</i></label>
-                          <div class="search-field">
-                              <input type="type" class="form-control" id="email" placeholder="Search Your Product">
-                              <i class="fa fa-search fa-lg" aria-hidden="true"></i>
+
+        <div class="container container-category">
+          <div class="row">
+              <div class="col-md-10 col-md-offset-1 slimride-category-row">
+                <div class="table-responsive respo-table">
+                    <table class="table catogory-list">
+                        <tr>
+                            <td><a href="#">Catagory</a></td>
+                            <td><a href="#">Blogs</a></td>
+                            <td><a href="#">Office</a></td>
+                            <td><a href="#">Sliride</a></td>
+                            <td><a href="#">Airport</a></td>
+                            <td><a href="#">Railway</a></td>
+                            <td><a href="#">Resources</a></td>
+                            <td><a href="#">Fares</a></td>
+                            <td><a href="#">Sliride</a></td>
+                            <td><a href="#">Blogs</a></td>
+                            <td><a href="#">Office</a></td>
+                            <td><a href="#">Sliride</a></td>
+                            <td><a href="#">Airport</a></td>
+                            <td><a href="#">Railway</a></td>
+                            <td><a href="#">Resources</a></td>
+                            <td><a href="#">Fares</a></td>
+                            <td><a href="#">Sliride</a></td>
+                        </tr>
+                    </table>
+                </div>
+              </div>
+          </div>
+        </div>
+
+        <div class="container container-category">
+          <div class="row">
+              <div class="col-md-10 col-md-offset-1">
+                  <div class="well">
+                      <div class="row">
+                          <div class="col-sm-2">
+                              <img src="img/tower.jpg" class="img-responsive">
+                          </div>
+                          <div class="col-sm-8 mid-section">
+                              <h4><a href="#">DESKTOP with genuine windows license</a></h4>
+                              <p><small>Computers & Accessories » Computers</small></p>
+                              <b>Benson Town, Bengaluru</b>
+                              <p class="mid-section-p">Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
+                          </div>
+                          <div class="col-sm-2 right-section">
+                              <button class="btn btn-lg" align="right">Select</button>
                           </div>
                       </div>
                   </div>
-              </form>
-          </div>
-      </div>
-    </div>
 
-    <div class="container container-category">
-      <div class="row">
-          <div class="col-md-10 col-md-offset-1 slimride-category-row">
-              <div class="catogory-list">
-                  <a href="#">Catagory</a>
-                  <a href="#">Blogs</a>
-                  <a href="#">Sliride</a>
-                  <a href="#">Office</a>
-                  <a href="#">Airport</a>
-                  <a href="#">Railway</a>
-                  <a href="#">Resources</a>
-                  <a href="#">Fares</a>
-                  <a href="#">Sliride</a>
-              </div>
-          </div>
-      </div>
-    </div>
+                  <div class="well">
+                      <div class="row">
+                          <div class="col-xs-12 col-sm-2 col-md-2">
+                              <img src="img/baby.jpg" class="img-responsive">
+                          </div>
+                          <div class="col-xs-12 col-sm-8 col-md-8 mid-section">
+                              <h4><a href="#">DESKTOP with genuine windows license</a></h4>
+                              <p><small>Computers & Accessories » Computers</small></p>
+                              <b>Benson Town, Bengaluru</b>
+                              <p class="mid-section-p">Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
+                          </div>
+                          <div class="col-xs-12 col-sm-2 col-md-2 right-section">
+                             <button class="btn btn-lg" align="right">Select</button>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="well">
+                      <div class="row">
+                          <div class="col-sm-2">
+                              <img src="img/aaa.jpg" class="img-responsive">
+                          </div>
+                          <div class="col-sm-8 mid-section">
+                              <h4><a href="#">DESKTOP with genuine windows license</a></h4>
+                              <p><small>Computers & Accessories » Computers</small></p>
+                              <b>Benson Town, Bengaluru</b>
+                              <p class="mid-section-p">Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
+                          </div>
+                          <div class="col-sm-2 right-section">
+                              <button class="btn btn-lg">Select</button>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="well">
+                      <div class="row">
+                          <div class="col-sm-2">
+                              <img src="img/holi.jpg" class="img-responsive">
+                          </div>
+                          <div class="col-sm-8 mid-section">
+                              <h4><a href="#">DESKTOP with genuine windows license</a></h4>
+                              <p><small>Computers & Accessories » Computers</small></p>
+                              <b>Benson Town, Bengaluru</b>
+                              <p class="mid-section-p">Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
+                          </div>
+                          <div class="col-sm-2 right-section">
+                              <button class="btn btn-lg btn-warning">Select</button>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="well">
+                      <div class="row">
+                          <div class="col-sm-2">
+                              <img src="img/tower.jpg" class="img-responsive">
+                          </div>
+                          <div class="col-sm-8 mid-section">
+                              <h4><a href="#">DESKTOP with genuine windows license</a></h4>
+                              <p><small>Computers & Accessories » Computers</small></p>
+                              <b>Benson Town, Bengaluru</b>
+                              <p class="mid-section-p">Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
+                          </div>
+                          <div class="col-sm-2 right-section">
+                              <button class="btn btn-lg" align="right">Select</button>
+                          </div>
+                      </div>
+                  </div>
 
-    <div class="container container-category">
-      <div class="row">
-          <div class="col-md-10 col-md-offset-1">
-              <div class="well">
-                  <div class="row">
-                      <div class="col-sm-2">
-                          <img src="img/tower.jpg" class="img-responsive">
-                      </div>
-                      <div class="col-sm-8 mid-section">
-                          <h4><a href="#">DESKTOP with genuine windows license</a></h4>
-                          <p><small>Computers & Accessories » Computers</small></p>
-                          <b>Benson Town, Bengaluru</b>
-                          <p class="mid-section-p">Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
-                      </div>
-                      <div class="col-sm-2 right-section">
-                          <button class="btn btn-lg" align="right">Select</button>
+                  <div class="well">
+                      <div class="row">
+                          <div class="col-sm-2">
+                              <img src="img/baby.jpg" class="img-responsive">
+                          </div>
+                          <div class="col-sm-8 mid-section">
+                              <h4><a href="#">DESKTOP with genuine windows license</a></h4>
+                              <p><small>Computers & Accessories » Computers</small></p>
+                              <b>Benson Town, Bengaluru</b>
+                              <p class="mid-section-p">Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
+                          </div>
+                          <div class="col-sm-2 right-section">
+                             <button class="btn btn-lg" align="right">Select</button>
+                          </div>
                       </div>
                   </div>
-              </div>
-
-              <div class="well">
-                  <div class="row">
-                      <div class="col-xs-12 col-sm-2 col-md-2">
-                          <img src="img/baby.jpg" class="img-responsive">
-                      </div>
-                      <div class="col-xs-12 col-sm-8 col-md-8 mid-section">
-                          <h4><a href="#">DESKTOP with genuine windows license</a></h4>
-                          <p><small>Computers & Accessories » Computers</small></p>
-                          <b>Benson Town, Bengaluru</b>
-                          <p class="mid-section-p">Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
-                      </div>
-                      <div class="col-xs-12 col-sm-2 col-md-2 right-section">
-                         <button class="btn btn-lg" align="right">Select</button>
-                      </div>
-                  </div>
-              </div>
-              <div class="well">
-                  <div class="row">
-                      <div class="col-sm-2">
-                          <img src="img/aaa.jpg" class="img-responsive">
-                      </div>
-                      <div class="col-sm-8 mid-section">
-                          <h4><a href="#">DESKTOP with genuine windows license</a></h4>
-                          <p><small>Computers & Accessories » Computers</small></p>
-                          <b>Benson Town, Bengaluru</b>
-                          <p class="mid-section-p">Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
-                      </div>
-                      <div class="col-sm-2 right-section">
-                          <button class="btn btn-lg">Select</button>
+                  <div class="well">
+                      <div class="row">
+                          <div class="col-sm-2">
+                              <img src="img/aaa.jpg" class="img-responsive">
+                          </div>
+                          <div class="col-sm-8 mid-section">
+                              <h4><a href="#">DESKTOP with genuine windows license</a></h4>
+                              <p><small>Computers & Accessories » Computers</small></p>
+                              <b>Benson Town, Bengaluru</b>
+                              <p class="mid-section-p">Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
+                          </div>
+                          <div class="col-sm-2 right-section">
+                              <button class="btn btn-lg">Select</button>
+                          </div>
                       </div>
                   </div>
-              </div>
-              <div class="well">
-                  <div class="row">
-                      <div class="col-sm-2">
-                          <img src="img/holi.jpg" class="img-responsive">
-                      </div>
-                      <div class="col-sm-8 mid-section">
-                          <h4><a href="#">DESKTOP with genuine windows license</a></h4>
-                          <p><small>Computers & Accessories » Computers</small></p>
-                          <b>Benson Town, Bengaluru</b>
-                          <p class="mid-section-p">Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
-                      </div>
-                      <div class="col-sm-2 right-section">
-                          <button class="btn btn-lg btn-warning">Select</button>
-                      </div>
-                  </div>
-              </div>
-              <div class="well">
-                  <div class="row">
-                      <div class="col-sm-2">
-                          <img src="img/tower.jpg" class="img-responsive">
-                      </div>
-                      <div class="col-sm-8 mid-section">
-                          <h4><a href="#">DESKTOP with genuine windows license</a></h4>
-                          <p><small>Computers & Accessories » Computers</small></p>
-                          <b>Benson Town, Bengaluru</b>
-                          <p class="mid-section-p">Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
-                      </div>
-                      <div class="col-sm-2 right-section">
-                          <button class="btn btn-lg" align="right">Select</button>
-                      </div>
-                  </div>
-              </div>
-
-              <div class="well">
-                  <div class="row">
-                      <div class="col-sm-2">
-                          <img src="img/baby.jpg" class="img-responsive">
-                      </div>
-                      <div class="col-sm-8 mid-section">
-                          <h4><a href="#">DESKTOP with genuine windows license</a></h4>
-                          <p><small>Computers & Accessories » Computers</small></p>
-                          <b>Benson Town, Bengaluru</b>
-                          <p class="mid-section-p">Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
-                      </div>
-                      <div class="col-sm-2 right-section">
-                         <button class="btn btn-lg" align="right">Select</button>
-                      </div>
-                  </div>
-              </div>
-              <div class="well">
-                  <div class="row">
-                      <div class="col-sm-2">
-                          <img src="img/aaa.jpg" class="img-responsive">
-                      </div>
-                      <div class="col-sm-8 mid-section">
-                          <h4><a href="#">DESKTOP with genuine windows license</a></h4>
-                          <p><small>Computers & Accessories » Computers</small></p>
-                          <b>Benson Town, Bengaluru</b>
-                          <p class="mid-section-p">Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
-                      </div>
-                      <div class="col-sm-2 right-section">
-                          <button class="btn btn-lg">Select</button>
-                      </div>
-                  </div>
-              </div>
-              <div class="well">
-                  <div class="row">
-                      <div class="col-sm-2">
-                          <img src="img/holi.jpg" class="img-responsive">
-                      </div>
-                      <div class="col-sm-8 mid-section">
-                          <h4><a href="#">DESKTOP with genuine windows license</a></h4>
-                          <p><small>Computers & Accessories » Computers</small></p>
-                          <b>Benson Town, Bengaluru</b>
-                          <p class="mid-section-p">Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
-                      </div>
-                      <div class="col-sm-2 right-section">
-                          <button class="btn btn-lg btn-warning">Select</button>
+                  <div class="well">
+                      <div class="row">
+                          <div class="col-sm-2">
+                              <img src="img/holi.jpg" class="img-responsive">
+                          </div>
+                          <div class="col-sm-8 mid-section">
+                              <h4><a href="#">DESKTOP with genuine windows license</a></h4>
+                              <p><small>Computers & Accessories » Computers</small></p>
+                              <b>Benson Town, Bengaluru</b>
+                              <p class="mid-section-p">Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
+                          </div>
+                          <div class="col-sm-2 right-section">
+                              <button class="btn btn-lg btn-warning">Select</button>
+                          </div>
                       </div>
                   </div>
               </div>
           </div>
-      </div>
-    </div>
+        </div>
+        <div class="wrapper-adjust"></div>
+    </div><!-- end of wrapper -->
 
 <footer class="footer">
     <div class="container">
@@ -249,7 +265,6 @@
                     <a href="#">About us</a>
                     <a href="#">How it Works?</a>
                     <a href="#">Why SlimRide?</a>
-                    <a href="#">Fares</a>
                     <a href="#">Career</a>
                     <a href="#">Faq</a>
                     <a href="#">Terms & Conditions</a>
