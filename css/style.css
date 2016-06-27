@@ -97,9 +97,12 @@ a.sign-up-ride:hover {
 	line-height : 38px;
 	color: #C5CCF7;
 }
+.container-category-one {
+	margin-top: 10px;
+	margin-bottom: 30px;
+}
 .container-category {
 	margin-top: 15px;
-	margin-bottom: 30px;
 }
 .slimride-category-row {
 
@@ -232,7 +235,7 @@ a.sign-up-ride:hover {
 	padding: 10px;
 }
 body::-webkit-scrollbar {
-    width: 1em;
+    width: 10px;
 }
  
 body::-webkit-scrollbar-track {
