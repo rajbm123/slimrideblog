@@ -56,6 +56,9 @@ a.sign-up-ride:hover {
 	background: #C5CCF7;
 	padding: 27px 15px;
 	border-radius: 4px;
+	    background-image: -webkit-linear-gradient(45deg,rgba(255,255,255,.15) 
+	    	25%,transparent 25%,transparent 50%,rgba(255,255,255,.15) 50%,
+	    	rgba(255,255,255,.15) 75%,transparent 75%,transparent);
 }
 .form-group {
 	margin-bottom: 0px;
@@ -226,6 +229,7 @@ a.sign-up-ride:hover {
  
 .respo-table::-webkit-scrollbar-thumb {
   background: #737373;
+  background-image: -webkit-linear-gradient(45deg,rgba(255,255,255,.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.15) 50%,rgba(255,255,255,.15) 75%,transparent 75%,transparent);
   outline: 1px solid #7582DA;
   height: 5px;
   border-radius: 10px;
