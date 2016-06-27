@@ -240,7 +240,7 @@ body::-webkit-scrollbar-track {
 }
  
 body::-webkit-scrollbar-thumb {
-  border-radius: 10px;
+  border-radius: 0px;
   background-color: #7582DA;	
   	background-image: -webkit-linear-gradient(45deg,
   	                                          rgba(255, 255, 255, .2) 25%,
